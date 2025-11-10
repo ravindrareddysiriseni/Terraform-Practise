@@ -5,6 +5,11 @@ Goodbye DynamoDB — Terraform S3 Backend Now Supports Native Locking
 #https://rafaelmedeiros94.medium.com/goodbye-dynamodb-terraform-s3-backend-now-supports-native-locking-06f74037ad39
 #https://medium.com/aws-specialists/dynamodb-not-needed-for-terraform-state-locking-in-s3-anymore-29a8054fc0e9
 
+S3-Native State Locking
+With S3-native state locking, we no longer need DynamoDB for state locking. Instead, we use a lock file directly within the S3 bucket. This approach requires fewer resources to deploy and reduces the IAM permissions required for accessing Terraform state, as managing a DynamoDB table is no longer necessary.
+
+This new feature simplifies the setup process for new AWS technicians, as the lock files stored in S3 will resemble local Terraform state files, making it easier to understand and manage.
+
 Here is the Terraform code, In terraform.tf we have to add use_locfile = true.
 
 terraform {
