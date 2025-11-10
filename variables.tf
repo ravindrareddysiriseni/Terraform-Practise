@@ -11,6 +11,8 @@ variable "public_subnet3_cidr" {}
 variable "public_subnet1_name" {}
 variable "public_subnet2_name" {}
 variable "public_subnet3_name" {}
+variable "private_subnet1_cidr" {}
+variable "private_subnet1_name" {}
 variable "Main_Route_Table" {}
 variable "environemnt" { default = "dev" }
 variable "AMIs" {
