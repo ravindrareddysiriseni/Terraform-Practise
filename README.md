@@ -28,3 +28,10 @@ terraform {
     use_lockfile = true  #S3 native locking
   }  
 }
+
+
+
+<img width="783" height="548" alt="image" src="https://github.com/user-attachments/assets/e7f43fec-4ea5-4111-ae22-02eef98c0d98" />
+
+
+
