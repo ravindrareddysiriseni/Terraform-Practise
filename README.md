@@ -27,5 +27,10 @@ At same time we are trying to execute terraform apply from windows machine, we a
 <img width="1853" height="798" alt="image" src="https://github.com/user-attachments/assets/3bd58ab0-da8c-4c45-9e30-a9ea5b622f6f" />
 
 
+dynamodb_table = "devopsbs1-terraform-state-lock" is Depricated. Use parameter "use_lockfile" instead.
+<img width="1831" height="384" alt="image" src="https://github.com/user-attachments/assets/080f9858-628b-4e7e-bba0-b674fe9f2c29" />
+
+
+
 
 
