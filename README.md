@@ -10,6 +10,8 @@ With S3-native state locking, we no longer need DynamoDB for state locking. Inst
 
 This new feature simplifies the setup process for new AWS technicians, as the lock files stored in S3 will resemble local Terraform state files, making it easier to understand and manage.
 
+#terraform init --backend-config=backend.json
+
 Here is the Terraform code, In terraform.tf we have to add use_locfile = true.
 
 terraform {
